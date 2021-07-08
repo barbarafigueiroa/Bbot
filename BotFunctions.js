@@ -1,21 +1,18 @@
 let routemovies = require('./movies')
 const Discord = require('discord.js')
 
-
-function receberMensagem(mensagem){
-
-    if(mensagem.content == "!qualquercoisa"){
-        mensagem.channel.send
-    }
-    
-    if(mensagem.author.bot == false){
-        if(mensagem.content == "!oi" || mensagem.content == "!ola"){
-            mensagem.channel.send(`
-            E ai  ${mensagem.author.username}, gerando na alta?
+function receberMensagem(mensagem){  
+    const { author, content, channel} = mensagem
+    if(author.bot == false){
+        if(content == "!oi" || content == "!ola"){
+            const msg = new Discord.MessageEmbed()
+            msg.setDescription(`
+            E ai  ${author}, gerando na alta?
             é noix, cpç! queres ver uma sequência boa pra assistir Star Wars?
             se tu quiser, digita sim ai!`)
+            channel.send(msg)
         }
-        else if(mensagem.content.toLowerCase() == "sim"){
+        else if(content.toLowerCase() == "sim"){
             routemovies.map(function (filme) {
                 const msg = new Discord.MessageEmbed()
                 msg.setTitle(filme.name)
@@ -24,10 +21,10 @@ function receberMensagem(mensagem){
                 msg.setThumbnail(filme.image)
                 msg.setImage(filme.image)
 
-                mensagem.channel.send(msg)
+                channel.send(msg)
             })
         }else
-        mensagem.channel.send("Entendi não bença!")
+        channel.send("Entendi não bença!")
     }
 }
 
