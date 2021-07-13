@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Uma Nova Esperança",
+        "synopsis": "Lançado originalmente como Guerra nas Estrelas, o Star Wars: Episódio IV - Uma Nova Esperança é ambientado há muito tempo atrás em uma galáxia muito, muito distante. O filme acompanha o jovem Luke Skywalker (Mark Hamill) que se vê envolvido em uma guerra intergalática quando seu tio compra dois robôs. Eles carregam uma mensagem da princesa Leia Organa (Carrie Fisher) para o Jedi Obi-Wan Kenobi (Alec Guinness) sobre os planos da construção da Estrela da Morte, uma gigantesca estação espacial com capacidade para destruir um planeta. Luke então se junta ao Jedi e ao mercenário Han Solo (Harrison Ford) para resgatar a princesa, captura por Darth Vader (David Prowse/James Earl Jones).",
+        "trailer": "https://www.youtube.com/watch?v=9gvqpFbRKtQ",
+        "year": 1977,
+        "order": 1,
+        "section": "Trilogia Clássica",
+        "id": 1,
+        "image": "https://bit.ly/2TIetq4"
+    },
+    {
+        "name": "O Império Contra Ataca",
+        "synopsis": "Considerado um dos melhores filmes da franquia, O Império Contra-ataca segue a luta dos membros da resistência contra as forças imperais comandadas por Darth Vader. Ao mesmo tempo, Luke Skywalker busca encontrar o Mestre Yoda a fim de aprender a dominar a \"Força\" e se tornar um Cavaleiro Jedi. No entanto, Darth Vader tem um segredo que envolve Luke e planeja levar o rapaz para o Lado Sombrio da Força.",
+        "trailer": "https://www.youtube.com/watch?v=JNwNXF9Y6kY",
+        "year": 1980,
+        "order": 2,
+        "section": "Trilogia Clássica",
+        "id": 1,
+        "image": "https://bit.ly/3gtXArQ"
+    },
+    {
+        "name": "O retorno Jedi",
+        "synopsis": "Terceiro filme da franquia a chegar aos cinemas (mas o sexto na contagem de episódios) O Retorno do Jedi segue as aventuras de Luke, Leia e Han. O Imperador Palpatine (Ian McDiarmid) supervisiona a construção de uma nova Estrela da Morte. Ao mesmo tempo, Luke Skywalker liberta Han Solo das mãos de Jabba, o Hutt, e precisa enfrentar Darth Vader para enfim se tornar um cavaleiro Jedi.",
+        "trailer": "https://www.youtube.com/watch?v=7L8p7_SLzvU",
+        "year": 1982,
+        "order": 3,
+        "section": "Trilogia Clássica",
+        "id": 1,
+        "image": "https://bit.ly/3cNern8"
+    },
+    {
+        "name": "A Ameaça Fantasma",
+        "synopsis": "O primeiro filme da trilogia prequela, Star Wars: Episódio 1 - A Ameaça Fantasma acompnha os Jedi Qui-Gon Jinn (Liam Neeson) e Obi-Wan Kenobi (Ewan McGregor) em uma perigosa aventura para tentar salvar o planeta Naboo da maquiavélica Federação Comercial e de Darth Sidious. Na jornada, eles conhecem o jovem Anakin Skywalker (Jake Lloyd), um escravo com habilidades incríveis e resolvem treiná-lo para se tornar um Jedi, sem saber que ele esconde um segredo obscuro.",
+        "trailer": "https://www.youtube.com/watch?v=qmyN3WMGqTk",
+        "year": 1993,
+        "order": 4,
+        "section": "Trilogia Prequel",
+        "id": 2,
+        "image": "https://bit.ly/3xsioFX"
+    },
+    {
+        "name": "Ataque dos Clones",
+        "synopsis": "Star Wars: Episódio 2 - Ataque dos Clones é ambientado dez anos após os eventos de A Ameaça Fantasma. Obi-Wan Kenobi agora treina Anakin Skywalker (Hayden Christensen) sob os ensinamentos Jedi. Os dois são escolhidos para proteger a senadora Padmé Amidala (Natalie Portman), cuja vida foi ameaçada por facções separatistas da República. Enquanto isso, Anakin e Amidala vivem um romance proibido, já que os Jedi não podem se relacionar amorosamente com ninguém.",
+        "trailer": "https://www.youtube.com/watch?v=DPV0kDhK0hM",
+        "year": 2002,
+        "order": 5,
+        "section": "Trilogia Prequel",
+        "id": 2,
+        "image": "https://bit.ly/3vur0ud"
+    },
+    {
+        "name": "A Vingança dos Sith",
+        "synopsis": "Em Star Wars: Episódio 3 - A Vingança dos Sith, Anakin Skywalker presta lealdade ao Chanceler Palpatine, que tem cada vez mais diferenças com o Conselho Jedi. Enquanto isso, o jovem tenta manter seu casamento com Padmé Amidala em segredo. Seduzido por promessas de poder, Anakin se aproxima cada vez mais de Darth Sidious até se tornar o temível Darth Vader.",
+        "trailer": "",
+        "year": 2005,
+        "order": 6,
+        "section": "Trilogia Prequel",
+        "id": 2,
+        "image": "https://bit.ly/35qWXZJ"
+    },
+    {
+        "name": "Rogue One",
+        "synopsis": "Rogue One é ambientado pouco antes de Uma Nova Esperança e explica como os planos da Estrela da Morte foram roubados e chegaram até as mãos de Leia Organa. Na trama do filme de 2016, Jyn Erso (Felicity Jones) foi afastada de seu pai (Mads Mikkelsen) ainda criança e teve que aprender a sobreviver por conta própria. Já adulta, a moça é resgatada da prisão pela Aliança Rebelde, que deseja ter acesso a uma mensagem enviada por seu pai a seu mentor, Saw Gerrera (Forest Whitaker). Com a promessa de liberdade, ela aceita trabalhar ao lado do capitão Cassian Andor (Diego Luna) e do robô K-2SO.",
+        "trailer": "https://www.youtube.com/watch?v=frdj1zb9sMY",
+        "year": 2016,
+        "order": 7,
+        "section": "Spin- Off",
+        "id": 3,
+        "image": "https://bit.ly/3guHP44"
+    },
+    {
+        "name": "Han Solo",
+        "synopsis": "Lançado em 2018, Han Solo: Uma História Star Wars acompanha o passado de Han Solo, desta vez interpretado por Alden Ehrenreich. Sob dificuldade financeira, o piloto e sua namorada Qi'ra (Emilia Clarke) encontram uma substância valiosa, mas perigosa, que leva à perseguição do Império e à separação entre os dois. Para reencontrar a amada, Han se infiltra em um plano arriscado, uma negociação com o perigoso Dryden Vos (Paul Bettany). No caminho, encontra parceiros como Chewbacca (Joonas Suotamo) e Lando Calrissian (Donald Glover), o proprietário original da Millennium Falcon.",
+        "trailer": "https://www.youtube.com/watch?v=UtpnRFzZWlM",
+        "year": 2018,
+        "order": 8,
+        "section": "Spin- Off",
+        "id": 3,
+        "image": "https://bit.ly/3iOIa34"
+    },
+    {
+        "name": "O Despertar da Força",
+        "synopsis": "Star Wars: O Despertar da Força é ambientado três décadas após a queda de Darth Vader e do Império Galático, e os Jedi e a Força são considerados mitos. Agora, a ameaçadora Primeira Ordem busca minar o poder da República, liderada por Kylo Ren (Adam Driver), o General Hux (Domhnall Gleeson) e o Líder Supremo Snoke (Andy Serkis). Eles capturam o membro da Resistência Poe Dameron (Oscar Isaac). Pouco antes de ser preso, ele consegue enviar o mapa da localização de Luke Skywalker. A mensagem é encontrada por Rey (Daisy Ridley), uma catadora de destroços. Ao mesmo tempo, Poe recebe ajuda de Finn (John Boyega), um stormtrooper que decide abandonar o posto repentinamente.",
+        "trailer": "https://www.youtube.com/watch?v=4r0287tUEgk",
+        "year": 2015,
+        "order": 9,
+        "section": "Nova Trilogia",
+        "id": 4,
+        "image": "https://bit.ly/3zsIzOJ"
+    },
+    {
+        "name": "Os Últimos Jedi",
+        "synopsis": "Star Wars: Os Últimos Jedi segue a jornada da jovem Rey, que começa a mostrar fortes sinais da Força. Ao encontrar o mítico e recluso Luke Skywalker em uma ilha isolada, ela busca entender o balanço da Força a partir dos ensinamentos do Mestre Jedi. Ao mesmo tempo, a conexão da moça com Kylo Ren aumenta. Paralelamente, a Primeira Ordem planeja um ataque contra Leia e a Resistência.",
+        "trailer": "https://www.youtube.com/watch?v=7Ieigpxyrgo",
+        "year": 2017,
+        "order": 10,
+        "section": "Nova Trilogia",
+        "id": 4,
+        "image": "https://bit.ly/3xvaPhw"
+    },
+    {
+        "name": "A Ascenção de Skywalker",
+        "synopsis": "Star Wars: A Ascensão Skywalker acompanha o retorno do Imperador Palpatine. Temendo seu poder, a Resistência toma a frente da batalha. Ao mesmo tempo, Rey treina para se torna uma Jedi, mas segue em conflito sobre seu passado e futuro, enquanto tenta entender a complexa conexão com Kylo Ren, também confuso com a Força.",
+        "trailer": "https://www.youtube.com/watch?v=Cmgv3fwoxQw",
+        "year": 2019,
+        "order": 11,
+        "section": "Nova Trilogia",
+        "id": 4,
+        "image": "https://bit.ly/3vx59lS"
+    }
+]
