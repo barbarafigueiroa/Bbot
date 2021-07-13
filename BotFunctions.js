@@ -11,10 +11,8 @@ function receberMensagem(mensagem){
         switch(content){
             case "/oi":
                 msg.setDescription(`
-                Olá ${author}, seja bem vindo ao tour Star Wars, 
-                vou te ajudar a escolher a melhor sequência para assistir
-                T O D O S  os filmes, e te dizer tudo que você precisar!
-                quer saber mais? digita: /comandos`)
+                Oi ${author}, Quer saber a melhor sequencia para assistir a todos os filmes da franquia Star Wars?
+                É só digitar: /comandos e escolher o que precisa saber!`)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
             break
@@ -29,8 +27,7 @@ function receberMensagem(mensagem){
                 channel.send(msg)
             break
             case "/todos":
-                console.log(channel, author, content)
-                movieController.showMovie(channel, author, content)
+                movieController.showAllMovies(channel)
             break
             case "/classica":
                 console.log(channel)
