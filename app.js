@@ -1,7 +1,7 @@
 
 const { Client}= require('discord.js')
 const botfunctions = require('./BotFunctions')
-
+const api = require("./api/StarWarsApi")
 
 new Client()
 .on("message", botfunctions)

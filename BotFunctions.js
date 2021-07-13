@@ -1,9 +1,10 @@
 const movies = require('./movies.json')
 const movieController = require("./movieController")
+const apiStarWars = require("./api/StarWarsApi")
 const Discord = require('discord.js')
 
 
-function receberMensagem(mensagem){  
+const receberMensagem = async (mensagem) => {  
     const { author, content, channel} = mensagem
     if(author.bot == false){
         const msg = new Discord.MessageEmbed()
@@ -45,7 +46,9 @@ function receberMensagem(mensagem){
             case "/nova":
                 console.log(channel)
                 movieController.showNewTrilogy(channel, 4)  
-            break      
+            break 
+            case "/personagens":
+                await apiStarWars.getPersonagem(channel)
             default:
                 msg.setDescription(`Desculpe, não entendi o seu comando!
                 Digite novamente /comandos e escolha a opção desejada!`)
