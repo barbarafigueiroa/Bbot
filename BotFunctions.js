@@ -23,16 +23,16 @@ function receberMensagem(mensagem){
                 Digite /todos para receber a lista completa dos filmes,
                 para ver só a Trilogia Clássica, digite: /classica,
                 para a Trilogia Prequel, digite: /prequel,
-                para ver os Spin-Offs, digite: /spinfoof,
+                para ver os Spin-Offs, digite: /spinoof,
                 e para ver os filmes da Nova Trilogia, digite: /nova`)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
             break
             case "/todos":
-                console.log(channel)
+                console.log(channel, author, content)
                 movieController.showMovie(channel, author, content)
             break
-            case "/classicos":
+            case "/classica":
                 console.log(channel)
                 movieController.showClassicTrilogy(channel, 1)
                 
@@ -50,8 +50,10 @@ function receberMensagem(mensagem){
                 movieController.showNewTrilogy(channel, 4)  
             break      
             default:
-                channel.send(`Desculpe, não entendi o seu comando!
-                 Digite novamente /comandos e escolha a opção desejada!`)
+                msg.setDescription(`Desculpe, não entendi o seu comando!
+                Digite novamente /comandos e escolha a opção desejada!`)
+                msg.setColor('#f7d2ec')
+                channel.send(msg)
             break
             
         }

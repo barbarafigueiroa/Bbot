@@ -13,7 +13,7 @@ const showMovie = (channel, movie) => {
         msg.setURL(movie.trailer)
         msg.setDescription(movie.synopsis)
         msg.setColor(idColor.color)
-        msg.setThumbnail(movie.image)
+        msg.setThumbnail(movie.assets)
         msg.setImage(movie.image)
         msg.setFooter(`
         Ano de Lançamento: ${movie.year}
