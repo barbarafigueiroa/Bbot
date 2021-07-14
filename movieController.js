@@ -48,50 +48,9 @@ const showMovie = (channel, movie) => {
 function showAllMovies(channel){
     movies.map(movie => showMovie(channel, movie))  
 }
-/**
- * Exibe apenas os filmes da trilogia Clássica
- * @param {Discord.channel} channel - Canal da mensagem
- * @param {integer} id - Identificador de id do filme para questões de filtro..
- */
-function showClassicTrilogy(channel, id) {
-    filterAndMapById(channel, id)
-}
-
-/**
- *  Exibe apenas os filmes da trilogia Prequel
- * @param {Discord.channel} channel - Canal da mensagem
- * @param {integer} id - Identificador de id do filme para questões de filtro..
- */
-function showPrequelTrilogy(channel, id) {
-    filterAndMapById(channel, id)
-}
-
-/**
- *  Exibe apenas os filmes Spinf- Off
- * @param {Discord.channel} channel - Canal da mensagem
- * @param {integer} id - Identificador de id do filme para questões de filtro..
- */
-function showSpinoff(channel, id) {
-    filterAndMapById(channel, id)
-}
-
-/**
- *  Exibe apenas os filmes da Nova Trilogia
- * @param {Discord.channel} channel - Canal da mensagem
- * @param {integer} id - Identificador de id do filme para questões de filtro..
- */
-function showNewTrilogy(channel, id) {
-    filterAndMapById(channel, id)
-}
-
-
 
 module.exports = {
     showMovie,
     showAllMovies,
-    filterAndMapById,
-    showClassicTrilogy,
-    showPrequelTrilogy,
-    showSpinoff,
-    showNewTrilogy
+    filterAndMapById
 }

@@ -3,7 +3,7 @@ const baseUrl = "https://swapi.dev/api/"
 const { MessageEmbed } = require("discord.js")
 
 const getApiSW = async (channel, endpoint, title) => {
-    const resposta = await axios.get(`${baseUrl}${title}`)
+    const resposta = await axios.get(`${baseUrl}${endpoint}`)
     const {data} = resposta
     channel.send(new MessageEmbed()
     .setTitle(`${title}`)
@@ -17,9 +17,7 @@ const getApiSW = async (channel, endpoint, title) => {
 
 const getPersonagem = async (channel) => await getApiSW(channel, "people", "Personagens")
 const getPlanets = async (channel) => await getApiSW(channel,"planets", "Planetas")
-const getNaves = async (channel) => await getApiSW(channel, "naves", naves)
-
-
+const getNaves = async (channel) => await getApiSW(channel, "naves", "Naves")
 
 module.exports = {
     getPersonagem, 

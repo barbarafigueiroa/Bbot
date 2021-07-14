@@ -4,63 +4,64 @@ const apiStarWars = require("./api/StarWarsApi")
 const Discord = require('discord.js')
 
 
-const receberMensagem = async (mensagem) => {  
-    const { author, content, channel} = mensagem
-    if(author.bot == false){
+const receberMensagem = async (mensagem) => {
+    const { author, content, channel } = mensagem
+    if (author.bot == false) {
         const msg = new Discord.MessageEmbed()
 
-        switch(content){
+        switch (content) {
             case "/oi":
                 msg.setDescription(`
                 Oi ${author}, Quer saber a melhor sequencia para assistir a todos os filmes da franquia Star Wars?
                 É só digitar: /comandos e escolher o que precisa saber!`)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
-            break
+                break
             case "/comandos":
                 msg.setDescription(`
                 Digite /todos para receber a lista completa dos filmes,
                 para ver só a Trilogia Clássica, digite: /classica,
                 para a Trilogia Prequel, digite: /prequel,
-                para ver os Spin-Offs, digite: /spinoof,
+                para ver os Spin-Offs, digite: /spinoff,
                 e para ver os filmes da Nova Trilogia, digite: /nova`)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
-            break
+                break
             case "/todos":
                 movieController.showAllMovies(channel)
-            break
+                break
             case "/classica":
                 console.log(channel)
-                movieController.showClassicTrilogy(channel, 1)
-                
-            break 
+                movieController.filterAndMapById(channel, 1)
+                break
             case "/prequel":
                 console.log(channel)
-                movieController.showPrequelTrilogy(channel, 2)
-            break
+                movieController.filterAndMapById(channel, 2)
+                break
             case "/spinoff":
                 console.log(channel)
-                movieController.showSpinoff(channel, 3)    
-            break
+                movieController.filterAndMapById(channel, 3)
+                break
             case "/nova":
                 console.log(channel)
-                movieController.showNewTrilogy(channel, 4)  
-            break 
+                movieController.filterAndMapById(channel, 4)
+                break
             case "/personagens":
                 await apiStarWars.getPersonagem(channel)
+                break
             case "planetas":
-                await apiStarWars.getPlanets(channel)    
+                await apiStarWars.getPlanets(channel)
+                break
             default:
                 msg.setDescription(`Desculpe, não entendi o seu comando!
                 Digite novamente /comandos e escolha a opção desejada!`)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
-            break
-            
+                break
+
         }
     }
-}       
+}
 
 
 module.exports = receberMensagem
