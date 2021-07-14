@@ -2,17 +2,27 @@ const axios = require("axios")
 const baseUrl = "https://swapi.dev/api/"
 const { MessageEmbed } = require("discord.js")
 
-const getPersonagem = async (channel) =>{
-    const resposta = await axios.get(`${baseUrl}people`)
+const getApiSW = async (channel, endpoint, title) => {
+    const resposta = await axios.get(`${baseUrl}${title}`)
     const {data} = resposta
     channel.send(new MessageEmbed()
-    .setTitle(`PERSONAGENS`)
+    .setTitle(`${title}`)
     .setDescription(`
-    Total de Personagens: ${data.count}
-    Persongens:
-    ${data.results.for(person => `- ${person.name}`)}`)
-   
+    Total de ${title}: ${data.count}
+    ${title}:
+    ${data.results.map(person => `- ${person.name}
+    `).join("")}
+    `))  
 }
+
+const getPersonagem = async (channel) => await getApiSW(channel, "people", "Personagens")
+const getPlanets = async (channel) => await getApiSW(channel,"planets", "Planetas")
+const getNaves = async (channel) => await getApiSW(channel, "naves", naves)
+
+
+
 module.exports = {
-    getPersonagem
+    getPersonagem, 
+    getPlanets,
+    getNaves,
 }

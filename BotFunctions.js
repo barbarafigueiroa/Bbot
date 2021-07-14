@@ -49,6 +49,8 @@ const receberMensagem = async (mensagem) => {
             break 
             case "/personagens":
                 await apiStarWars.getPersonagem(channel)
+            case "planetas":
+                await apiStarWars.getPlanets(channel)    
             default:
                 msg.setDescription(`Desculpe, não entendi o seu comando!
                 Digite novamente /comandos e escolha a opção desejada!`)
