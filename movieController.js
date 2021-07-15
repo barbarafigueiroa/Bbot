@@ -25,8 +25,9 @@ const showMovie = (channel, movie) => {
         msg.setThumbnail(movie.assets)
         msg.setImage(movie.image)
         msg.setFooter(`
+
         Ano de Lançamento: ${movie.year}
-        Clique no Título e assista ao Trailler`)
+    Clique no Título e assista ao Trailler`)
 
         channel.send(msg)
 

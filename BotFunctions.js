@@ -1,4 +1,3 @@
-const movies = require('./movies.json')
 const movieController = require("./movieController")
 const apiStarWars = require("./api/StarWarsApi")
 const Discord = require('discord.js')
@@ -10,51 +9,82 @@ const receberMensagem = async (mensagem) => {
         const msg = new Discord.MessageEmbed()
 
         switch (content) {
-            case "/oi":
+            case "!oi":
                 msg.setDescription(`
-                Oi ${author}, Quer saber a melhor sequencia para assistir a todos os filmes da franquia Star Wars?
-                É só digitar: /comandos e escolher o que precisa saber!`)
+                Oi ${author}, como vai?
+                Aqui tenho todas as informações que tu precisa para saber sobre 
+                **S T A R   W A R S** 
+                digita **!comandos** pra saber tudo o que tu pode ter acesso!`)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
                 break
-            case "/comandos":
+            case "!comandos":
                 msg.setDescription(`
-                Digite /todos para receber a lista completa dos filmes,
-                para ver só a Trilogia Clássica, digite: /classica,
-                para a Trilogia Prequel, digite: /prequel,
-                para ver os Spin-Offs, digite: /spinoff,
-                e para ver os filmes da Nova Trilogia, digite: /nova`)
+                Para ver **TODOS** os filmes, digite **!todos**
+                -------------------------------------------------------
+                Para ver só a **TRILOGIA CLÁSSICA**, digite: **!classica**
+                -------------------------------------------------------
+                Para ver só a **TRILOGIA PREQUEL**, digite: **!prequel**
+                -------------------------------------------------------
+                Para ver só os **SPIN-OFFS**, digite: **!spinoff**
+                -------------------------------------------------------
+                Para ver só os filmes da **NOVA TRILOGIA**, digite: **!nova**
+                -------------------------------------------------------
+                Para ver a lista de **PERSONAGENS** digite: **!personagens**
+                --------------------------------------------------------
+                Para ver só a lista de **PLANETAS**, digite: **!planetas**
+                --------------------------------------------------------
+                Para ver só a lista de **NAVES**, digite: **!naves**
+                --------------------------------------------------------
+                Para ver só a lista de **ESPÉCIES**, digite: **!especies**
+                --------------------------------------------------------
+                Para ver só a lista de **FILMES**, digite: **!filmes**
+                --------------------------------------------------------
+                Para ver só a lista de **VEÍCULOS**, digite: **!veiculos**
+                `)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
                 break
-            case "/todos":
+            case "!todos":
                 movieController.showAllMovies(channel)
                 break
-            case "/classica":
+            case "!classica":
                 console.log(channel)
                 movieController.filterAndMapById(channel, 1)
                 break
-            case "/prequel":
+            case "!prequel":
                 console.log(channel)
                 movieController.filterAndMapById(channel, 2)
                 break
-            case "/spinoff":
+            case "!spinoff":
                 console.log(channel)
                 movieController.filterAndMapById(channel, 3)
                 break
-            case "/nova":
+            case "!nova":
                 console.log(channel)
                 movieController.filterAndMapById(channel, 4)
                 break
-            case "/personagens":
-                await apiStarWars.getPersonagem(channel)
+            case "!personagens":
+                await apiStarWars.getPeople(channel)
                 break
-            case "planetas":
+            case "!planetas":
                 await apiStarWars.getPlanets(channel)
                 break
+            case "!naves":
+                await apiStarWars.getStarShips(channel)
+                break 
+            case "!filmes":
+                await apiStarWars.getFilms(channel)
+                break 
+            case "!veiculos":
+                await apiStarWars.getVehicles(channel)
+                break 
+            case "!especies":
+                await apiStarWars.getSpecies(channel)
+                break         
             default:
-                msg.setDescription(`Desculpe, não entendi o seu comando!
-                Digite novamente /comandos e escolha a opção desejada!`)
+                msg.setDescription(`**Desculpe**, não entendi o seu comando!
+                Digite novamente **!comandos** e escolha a opção desejada!`)
                 msg.setColor('#f7d2ec')
                 channel.send(msg)
                 break

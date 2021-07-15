@@ -5,5 +5,5 @@ const api = require("./api/StarWarsApi")
 
 new Client()
 .on("message", botfunctions)
-.login('ODYyMTEyOTM0NDI4MDE2NjYw.YOTnPA.q7CJdX5gqYib7l4iWe2WmJKvwZA');
+.login('ODY0NjczNTMyODM5NTkxOTQ2.YO43-w.BxmhZo8Dv7_M0L3SE6mHOtizwLM');
 
