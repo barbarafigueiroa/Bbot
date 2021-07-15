@@ -21,7 +21,7 @@ const getApiSW = async (channel, endpoint, title) => {
 
 const getPeople = async (channel) => await getApiSW(channel, "people", "Personagens")
 const getPlanets = async (channel) => await getApiSW(channel,"planets", "Planetas")
-const getStarShips = async (channel) => await getApiSW(channel, "Starships", "Naves")
+const getStarShips = async (channel) => await getApiSW(channel, "starships", "Naves")
 const getFilms = async (channel) => await getApiSW(channel, "films", "Filmes")
 const getVehicles = async (channel) => await getApiSW(channel, "vehicles", "Veículos")
 const getSpecies = async (channel) => await getApiSW(channel, "species", "Espécies")
