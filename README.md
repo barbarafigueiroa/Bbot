@@ -3,7 +3,7 @@
 # Mentoria Iniciativa Padawan
 
 Mentoria ministrada por Felipe Reinaux voltada para o uso da linguagem JavaScript fazendo uso de funções básicas, desenvolvendo códigos complexos e completos.
-[GitHub](https://github.com/barbarafigueiroa)
+GitHub dele >>[GitHub](https://github.com/fereinaux)<<
 
 
 
@@ -36,14 +36,14 @@ No bot tem algumas **funções**, são elas:
 ### Como você pode utilizar o bot:
 
 - Fazer o clone do repositório
-[clica aqui pra clonar](https://github.com/barbarafigueiroa/Bbot/tree/B%C3%A1rbara)
+[clonar](https://github.com/barbarafigueiroa/Bbot/tree/B%C3%A1rbara)
 
 - Abrir o repositório no seu editor de código (utilizei o VSCode)
 
 - Instalar os pacotes node: npm install
 
 - Gerar chave prórpia para rodar o bot
-[clica aqui pra gerar a chave](https://discord.com/developers/applications/)
+[gerar chave](https://discord.com/developers/applications/)
 
 - Digitar no terminal bash node app.js
  
