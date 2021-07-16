@@ -31,7 +31,7 @@ No bot tem algumas **funções**, são elas:
 - Gerar chave prórpia para rodar o bot
 [clica aqui pra gerar chave](https://discord.com/developers/applications/)
 
-- Digitar no terminal bash node app.js
+- Digitar no terminal bash: **node app.js**
  
 
 
