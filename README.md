@@ -2,8 +2,8 @@
 
 # Mentoria Iniciativa Padawan
 
-Mentoria ministrada por Felipe Reinaux voltada para o uso da linguagem JavaScript fazendo uso de funções básicas, desenvolvendo códigos complexos e completos.
-[GitHub](https://github.com/fereinaux)
+Mentoria ministrada por Felipe Reinaux/ [GitHub](https://github.com/fereinaux) voltada para o uso da linguagem JavaScript fazendo uso de funções básicas, desenvolvendo códigos complexos e completos.
+
 
 ### Criando um bot do discord do Zero:
 
