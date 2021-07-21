@@ -28,31 +28,30 @@ No bot tem algumas **funções**, são elas:
 
 - Abrir o repositório no seu editor de código de preferência (utilizei o VSCode)
 
-- Instalar os pacotes node: npm install
+- Instalar os pacotes node: **npm install**
 
--No prórpio Discord, crie um novo servidor para rodar o bot, fica no botão de + do lado esquerdo da tela
+- No prórpio Discord, crie um novo servidor para rodar o bot, fica no botão de + do lado esquerdo da tela
 
--[Clica aqui](https://discord.com/developers/applications/) para criar uma nova aplicação o teu bot no caso e configurar ele(nome, descrição, avatar)
+- [Clica aqui](https://discord.com/developers/applications/) para criar uma nova aplicação o teu bot no caso e configurar ele(nome, descrição, avatar)
 
--Você vai precisar deixar o bot nas configurações de adm para executar algumas funções
+- Você vai precisar deixar o bot nas configurações de adm para executar algumas funções
 
--Nas informações gerais do seu bot, copie o **APLLICATION ID** 
+- Nas informações gerais do seu bot, copie o **APLLICATION ID** 
 
-- Nesse link, você só precisa substituir SEU ID, pelo número copiado
-https://discord.com/oauth2/authorize?client_id=**SEUID**&permissions=8&scope=bot
+- Nesse link você só precisa substituir SEU ID, pelo número copiado
+https://discord.com/oauth2/authorize?client_id=SEUID&permissions=8&scope=bot
 
--Você vai selecionar o servidor que criou, continuar e marcar a opção adm e autorizar
+- Você vai selecionar o servidor que criou, continuar e marcar a opção adm e autorizar
 
--Depois disso seu bot já estará no servidor que você criou
+- Depois disso seu bot já estará no servidor que você criou
 
--Para que o bot funcione ele precisa de uma chave, que é o TOKEN
-[AQUI](https://discord.com/developers/applications/864673532839591946/bot) ao lado do avatar você tem a opção de copiar o TOKEN
+- Para que o bot funcione ele precisa de uma chave, que é o [TOKEN](https://discord.com/developers/applications/864673532839591946/bot) ao lado do avatar você tem a opção de copiar o TOKEN
 
--Depois de copiado, vá ao arquivo .env do repositório e substitua **CHAVE_DE_ACESSO** pelo seu **TOKEN** copiado.
+- Depois de copiado, vá ao arquivo .env do repositório e substitua **CHAVE_DE_ACESSO** pelo seu **TOKEN** copiado.
 
--PRONTO! agora com tudo configurado, dependencias, servidor criado, aplicação(bot) criada, permissões de administrador ok, tudo pronto para usar o Bbot!
+- PRONTO! agora com tudo configurado, dependencias, servidor criado, aplicação(bot) criada, permissões de administrador ok, tudo pronto para usar o Bbot!
 
--Só digitar **node app.js** e saber tudo sobre Star Wars!
+- Só digitar **node app.js** e saber tudo sobre Star Wars!
  
 
 
